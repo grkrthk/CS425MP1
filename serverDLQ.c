@@ -102,7 +102,7 @@ int main(int argc, char *argv[])
     }
     
     // Open a socket
-    sd = socket(AF_INET, SOCK_DGRAM, ZERO);
+    sd = socket(AF_INET, SOCK_STREAM, ZERO);
     if ( sd < 0 ) 
     {
         printf("\nError while creating socket\n");

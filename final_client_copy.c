@@ -384,17 +384,17 @@ char* match_grep(int input)
        case 10 :printf("Enter the specific Key you want to search\n");
                 scanf("%s",search_pattern);
                 fflush(stdin);
-                strcat(pattern,"grep '^");
+                strcat(pattern,"grep \"");
                 strcat(pattern,search_pattern);
-                strcat(pattern,"[ ]*:' ~/log.txt ");
+                strcat(pattern,"\" ~/log.txt ");
                 break;
 
        case 11 : printf("Enter the specific value you want to search\n");
                  scanf("%s",search_pattern);
                  fflush(stdin);
-                 strcat(pattern,"grep '^.*:.*");
+                 strcat(pattern,"grep \"");
                  strcat(pattern,search_pattern);
-                 strcat(pattern,"' ~/log.txt ");
+                 strcat(pattern,"\" ~/log.txt ");
                  break;   
        default : printf("wrong option entered..bye !\n");
                 exit(0);
